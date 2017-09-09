@@ -38,6 +38,9 @@
 		883C70BE1F63D1B90042D3B5 /* Spotify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spotify.swift; sourceTree = "<group>"; };
 		883C70BF1F63D1B90042D3B5 /* SpotifyScripting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyScripting.swift; sourceTree = "<group>"; };
 		883C70C31F63D2000042D3B5 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		88A250831F63F1AC00AF2455 /* iTunes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iTunes.h; sourceTree = "<group>"; };
+		88A250841F63F1B500AF2455 /* Spotify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Spotify.h; sourceTree = "<group>"; };
+		88A250851F63F1BC00AF2455 /* Vox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vox.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,7 @@
 		883C70951F63D0F20042D3B5 /* iTunesBridge */ = {
 			isa = PBXGroup;
 			children = (
+				88A250861F63F1C300AF2455 /* ObjC */,
 				883C70961F63D0F20042D3B5 /* iTunesBridge.h */,
 				883C70B61F63D1730042D3B5 /* iTunes.swift */,
 				883C70B71F63D1730042D3B5 /* iTunesScripting.swift */,
@@ -103,6 +107,7 @@
 		883C70A21F63D11B0042D3B5 /* VoxBridge */ = {
 			isa = PBXGroup;
 			children = (
+				88A250871F63F1D000AF2455 /* ObjC */,
 				883C70A31F63D11B0042D3B5 /* VoxBridge.h */,
 				883C70BA1F63D1A10042D3B5 /* Vox.swift */,
 				883C70BB1F63D1A10042D3B5 /* VoxScripting.swift */,
@@ -114,6 +119,7 @@
 		883C70AF1F63D1310042D3B5 /* SpotifyBridge */ = {
 			isa = PBXGroup;
 			children = (
+				88A250881F63F1D900AF2455 /* ObjC */,
 				883C70B01F63D1310042D3B5 /* SpotifyBridge.h */,
 				883C70BE1F63D1B90042D3B5 /* Spotify.swift */,
 				883C70BF1F63D1B90042D3B5 /* SpotifyScripting.swift */,
@@ -128,6 +134,30 @@
 				883C70C31F63D2000042D3B5 /* ScriptingBridge.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88A250861F63F1C300AF2455 /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				88A250831F63F1AC00AF2455 /* iTunes.h */,
+			);
+			path = ObjC;
+			sourceTree = "<group>";
+		};
+		88A250871F63F1D000AF2455 /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				88A250851F63F1BC00AF2455 /* Vox.h */,
+			);
+			path = ObjC;
+			sourceTree = "<group>";
+		};
+		88A250881F63F1D900AF2455 /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				88A250841F63F1B500AF2455 /* Spotify.h */,
+			);
+			path = ObjC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -564,6 +594,7 @@
 				883C709B1F63D0F20042D3B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		883C70A61F63D11B0042D3B5 /* Build configuration list for PBXNativeTarget "VoxBridge" */ = {
 			isa = XCConfigurationList;
@@ -572,6 +603,7 @@
 				883C70A81F63D11B0042D3B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		883C70B31F63D1310042D3B5 /* Build configuration list for PBXNativeTarget "SpotifyBridge" */ = {
 			isa = XCConfigurationList;
@@ -580,6 +612,7 @@
 				883C70B51F63D1310042D3B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
